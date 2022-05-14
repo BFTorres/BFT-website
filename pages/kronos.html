@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>KRONOS Ironhack Project Module 2 - Bernardo Fonseca Torres (Developer), Silvi Sinanaj(Developer), Birte Brauer(UX/UI Designer)</title>
+  <meta name="description" content="Bernardo Fonseca Torres is a Software Developer and Multidisciplinary Designer, 
+  currently working as a Frontend Developer and UX/UI Designer at Lohoff.">
+  <meta name="keywords" content="Ironhack, Hotel, HTML, Express, NodeJS, Handlebars, CSS, JavaScript, JS, Frontend, UX, UI, Design, Product Design, Web Development">
+  <meta name="author" content="Bernardo Fonseca Torres">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/../css/startup-standalone.css">
+  <link rel="stylesheet" href="/../styles.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <link rel="shortcut icon" type="image/ico" href='.../favicon.ico' />
+  <!-- icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+    <link rel="manifest" href="../images/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+  <nav>
+    <div class="container nav-wrapper fontExpanse">
+      <a href="#" data-target="slide_out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <a href="/index.html"><img src="../images/BFT-LOGO.png" data-target="nav-mobile"
+          class="logo-img show-on-small hide-on-large-only right" alt="BFT"></a>
+      <ul class=" hide-on-med-and-down">
+        <li><a href="/index.html"><img src="../images/BFT-LOGO.png" class="logo-img" alt="BFT"></a></li>
+        <li><a href="/index.html#projects">Portfolio</a></li>
+        <li><a href="/index.html#aboutme">About me</a></li>
+        <li><a href="nfts.html">NFTs</a></li>
+        <!-- <li><a href="#contact">Contact</a></li> -->
+        <div class="right mt-5">
+          <li><a class="p-0" href="https://github.com/BFTorres"><img class="nav-img" src="../images/Vectorgithub.png" alt="GitHub"></a></li>
+          <li><a class="p-0" href="https://www.linkedin.com/in/bernardo-fonseca-torres/"><img class="nav-img"
+                src="../images/Vectorlinkedin.png" alt="LinkedIn"></a> </li>
+          <li><a class="p-0" href="#"><img class="nav-img"
+                src="../images/Vectormedium.png" alt="Medium"></a> </li>
+        </div>
+      </ul>
+    </div>
+  </nav>
+      <ul class="sidenav fontExpanse" id="slide_out">
+        <li><a class="sidenav-close" href="#!"><i class="material-icons right x-icon-sn">close</i></a></li>
+        <li><a href="/index.html#projects" <!--class="active"--><img src="../images/5portfolio.png"
+              class="nav-img sidenav-img" alt="portfolio-img">Portfolio</a></li>
+        <li><a href="/index.html#aboutme"><img src="../images/BobaFett1.png"
+              class="nav-img sidenav-img" alt="aboutme-img">About me</a></li>
+        <!-- <li><a href="#contact"><img src="images/ion_rocket-sharprocket.png"
+              class="nav-img">Contact</a></li> -->
+        <div>
+          <li><a href="https://github.com/BFTorres"><img class="nav-img sidenav-img"
+                src="../images/Vectorgithub.png" alt="github-logo"><span>Github</span></a></li>
+          <li><a href="https://www.linkedin.com/in/bernardo-fonseca-torres/"><img class="nav-img sidenav-img"
+                src="../images/Vectorlinkedin.png" alt="linkedin-logo"><span>LinkedIn</span></a></li>
+          <li><a href="#"><img class="nav-img sidenav-img"
+                src="../images/Vectormedium.png" alt="medium-logo"><span>Medium</span></a></li>      
+        </div>
+      </ul>
+    <main>
+      <!-- <lottie-monkey class="container coming-soon">
+        <div class="mt-100 container">
+          <p class="alert alert-error"><i class="material-icons">info_outline</i>This page is being updated soon</p>
+        </div>
+
+        <div class=" show-on-small hide-on-med-and-up">
+         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+         <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_jYTS0r.json"  
+         background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay>
+         </lottie-player>
+        </div> 
+     
+        <div class="show-on-large hide-on-small-only">
+         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+         <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_jYTS0r.json"  
+         background="transparent"  speed="1"  style="width: 600px; height: 600px;"  loop  autoplay>
+         </lottie-player>
+        </div> 
+    </lottie-monkey> -->
+     
+      <header id="home" class="#">
+        <section id="header" class="container">
+          <div class="row staggered-transition-wrapper">
+            <div id="animated-example" class="col s12 left start-height animated fadeIn"> <!--  -->
+              <!-- <div>
+                <p class="alert alert-error"><i class="material-icons">info_outline</i>The page is being updated soon</p>
+              </div> -->
+              <h1 class="hide-on-small-only fontKronos">KRONOS</h1>
+                <h2 class="show-on-small hide-on-med-and-up fontKronos">KRONOS</h2>
+              <h4 class="hide-on-small-only">Hotel Task Management System</h4>
+                <h5 class="show-on-small hide-on-med-and-up">Hotel Task Management System</h5>
+                      <!-- <ul>
+                        <li class="mt-40">Links</li>
+                        <li>Project demo: <a class="kronosHeader-link" href="https://kronos-tms.herokuapp.com/" target="_blank"
+                          rel="noopener">https://kronos-tms.herokuapp.com/</a></li>
+                        <li>GitHub repository: <a class="kronosHeader-link" href="https://github.com/BFTorres/Kronos" target="_blank"
+                          rel="noopener">https://github.com/BFTorres/Kronos</a></li>
+                      </ul> -->
+                      <div class="scroll-down-arrow  center"> <!-- show-on-small hide-on-med-and-up -->
+                        <a href="#projectKronos">
+                          <!-- <p class="font1 font-12"><b>Scroll down to see more</b></p> -->
+                          <img class="arrow-img-small" src="../images/thinarrow.png" alt="click-me">
+                        </a>
+                      </div>
+            </div>
+          </div>
+        </section>
+      </header>
+    <section class="#">
+      <div class="container .staggered-transition-wrapper">
+        <div>
+          <h5 class="mt-0 mt-100 up-in-out font-inter-black">Build and design of a TMS for the hospitality sector</h5>
+            <p class="font1 up-in-out">IRONHACK Project Module 2<br>
+            Backend SSR Web Application<span class="subheading"></p>
+              <ul>
+                <li class="up-in-out font-inter-black">Links</li>
+                <li class="up-in-out">Project demo: <a class="kronosHeader-link" href="https://kronos-tms.herokuapp.com/" target="_blank"
+                  rel="noopener">https://kronos-tms.herokuapp.com/</a></li>
+                <li class="up-in-out">GitHub repository: <a class="kronosHeader-link" href="https://github.com/BFTorres/Kronos" target="_blank"
+                  rel="noopener">https://github.com/BFTorres/Kronos</a></li>
+              </ul>
+        </div>     
+        <!-- <p class="font1">
+          <div class="font1">Tech Stack<span class="subheading"></div>
+          <a href="https://nodejs.org/en/">NodeJS</a> |
+          <a href="http://expressjs.com/">ExpressJS</a> |
+          <a href="#">Handlebars</a> |
+          <a href="https://getbootstrap.com/">Bootstrap</a> |    
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a> | 
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a> |
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a> | 
+          <a href="https://www.figma.com/">Figma</a> | 
+          <a href="https://affinity.serif.com/en-us/">Affinity Suite</a> | 
+          <a href="https://www.mongodb.com/">MongoDB</a> |
+          <a href="https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/GitHub">Git</a></span>
+        </p> -->
+        <div id="projectKronos" class="center mt-150 mb-150">
+          <img class="kronosLargeImg" src="../images/pageKronos2.png">
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div>
+                <div class="">
+                  <div class="row">
+                    <div class="left col s12 m12 l6 l1offset-m1 font2">
+                      <h5 class="font-inter-black">CHALLENGE</h5>
+                      <p>Build a web application that solves a real world problem by following
+                         the principles of best practices and also meeting the expected scope. 
+                      </p>
+                    </div> 
+                    <div class="col s12 m12 l6 l1offset-m1 font2">  
+                      <h5 class="font-inter-black">INVOLVEMENT</h5>
+                      <p><a href="https://www.linkedin.com/in/bernardo-fonseca-torres/" rel="noopener" target="_blank">Bernardo F. Torres</a>: Fullstack development<br>
+                      <a href="https://www.linkedin.com/in/silvi-sinanaj/" rel="noopener" target="_blank">Silvi Sinanaj</a>: Fullstack development<br>
+                      <a href="https://www.linkedin.com/in/birte-brauer/" rel="noopener" target="_blank">Birte Brauer</a>: UX/UI design</p>
+                    </div> 
+                  </div>
+                  <div class="row">
+                    <div class="col s12 m12 l6 l1offset-m1 font2">
+                      <h5 class="font-inter-black">PROJECT</h5>
+                      <p>
+                        Presented here is the end-build and design of our web application.
+                        With Kronos we solved the issues of task management in 
+                        hotels, by applying our own year long expertise in the field to fulfil it's end goal. 
+                        Below I have included a range of the template designs, along with the responsive design 
+                        and the styleguide — to show a good insight into the process developing and the design of this web application.
+                      </p>
+                    </div>
+                  
+                    <!-- <div class="col s12 m12 l6 l1offset-m1 font2">
+                      <h5>DATE</h5>
+                      <p>
+                        2021
+                      </p>
+                    </div> -->
+                    <div class="col s12 m12 l6 l1offset-m1 font2">
+                      <h5 class="font-inter-black">TECH STACK</h5>
+                        <ul>
+                          <span>
+                            <a href="https://nodejs.org/en/">NodeJS</a>,
+                            <a href="http://expressjs.com/">ExpressJS</a>,
+                            <a href="#">Handlebars</a>, 
+                            <a href="https://getbootstrap.com/">Bootstrap</a>,     
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a>,  
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a>, 
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>,  
+                            <a href="https://www.figma.com/">Figma</a>,  
+                            <a href="https://affinity.serif.com/en-us/">Affinity Suite</a>,  
+                            <a href="https://www.mongodb.com/">MongoDB</a>, 
+                            <a href="https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/GitHub">Git</a></span>
+                        </ul>
+                    </div>
+                  </div>
+                  <!-- <div class="row">
+                    <div class="col s12 m12 l6 l1offset-m1 font2">
+                      <h5>Links</h5>
+                      <p>Project demo: <a class="resume-link" href="https://kronos-tms.herokuapp.com/" target="_blank"
+                        rel="noreferrer noopener">https://kronos-tms.herokuapp.com/</a></p>
+                      <p>GitHub repository: <a class="resume-link" href="https://github.com/BFTorres/Kronos" target="_blank"
+                        rel="noreferrer noopener">https://github.com/BFTorres/Kronos</a></p>
+                      <p>Project presentation: <a class="resume-link" href="" target="_blank"
+                        rel="noreferrer noopener"></a></p>
+                      <p><a class="resume-link" href="" target="_blank"
+                        rel="noreferrer noopener"></a></p>
+                    </div>
+                  </div> -->
+                </div>
+                <div class="center mt-150 mb-50">
+                  <img class="responsive-img" src="../images/pageKronos3.png">
+                </div>
+
+                <div class="show-on-large hide-on-med-and-down">
+                  <div class="center mt-150 mb-50">
+                    <img class="responsive-img" src="../images/pageKronos5.png">
+                  </div>
+                </div>
+                <div class="show-on-medium-and-down hide-on-large-only hide-on-extra-large-only">
+                  <div class="center mt-150 mb-50">
+                    <img class="responsive-img" src="../images/pageKronosMobile1.png">
+                  </div>
+                  <div class="center mt-150 mb-50">
+                    <img class="responsive-img" src="../images/pageKronosMobile2.png">
+                  </div>
+                  <div class="center mt-150 mb-50">
+                    <img class="responsive-img" src="../images/pageKronosMobile3.png">
+                  </div>
+                </div>
+
+                <div class="center mt-150 mb-150">
+                  <img class="responsive-img" src="../images/pageKronos4.png">
+                </div>
+                <div class=" mt-150 mb-150">
+                  <h5 class="font-inter-black">Project presentation</h5>
+                  <div>
+                    <video class="responsive-video" controls>
+                      <source src="../images/KRONOSpresi.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+                <div class="center font1 mt-150 mb-150">
+                  <a href="https://kronos-tms.herokuapp.com/" target="_blank"
+                  rel="noopener" class="button nav-link mt-15">
+                    <div class="bottom"></div>
+                    <div class="top">
+                        <div class="label">
+                            See demo
+                        </div>
+                        <div class="button-border button-border-left"></div>
+                        <div class="button-border button-border-top"></div>
+                        <div class="button-border button-border-right"></div>
+                        <div class="button-border button-border-bottom"></div>
+                    </div>
+                  </a>
+                </div>
+          </div>
+      </div>
+    </section>
+    <section id="contact" class="page-footer mt-100">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 mtb-30 ">
+            <h5 class="mtb-30 mb-30"><!-- LET'S WORK TOGETHER<br> -->
+              Feel free to reach out through<a href="https://www.linkedin.com/in/bernardo-fonseca-torres/" class="font-inter-black"> LinkedIn</a>
+              or<a href="mailto:BFTorres@protonmail.com" class="font-inter-black"> Email.</a></h5>
+            <a class="pr-15" href="https://github.com/BFTorres" target="_blank">
+              <img class="social-media-img" src="../images/Vectorgithub.png" alt="GitHub"></a>
+            <a class="pr-15" href="https://www.linkedin.com/in/bernardo-fonseca-torres/" target="_blank">
+              <img class="social-media-img" src="../images/Vectorlinkedin.png" alt="LinkedIn"></a>
+            <a class="pr-15" href="#">
+              <img class="social-media-img" src="../images/Vectormedium.png" alt="Medium"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="footer" class="page-footer mt-100">
+    <!-- class="center"-->
+    <div class="footer-copyright font2 center">
+      <div class="container font1">
+        <p class="left">
+          All content are exclusively for private usage and non-commercial purposes
+        </p>
+        <div class="divider"></div>
+        <div class="footer-link">
+          <div class="left hide-on-small-only">© 
+            <script>
+              document.write(new Date().getFullYear());
+            </script> 
+            Bernardo Fonseca Torres
+          </div>
+          <a href="/pages/legal.html" class="right hide-on-small-only">Impressum</a>
+          <p class="center show-on-small hide-on-med-and-up">© 
+            <script>
+              document.write(new Date().getFullYear());
+            </script> 
+            Bernardo Fonseca Torres
+          </p>
+          <p><a href="/pages/legal.html" class="center show-on-small hide-on-med-and-up">Impressum</a></p>
+        </div>
+      </div>
+  </footer>
+</body>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/materialize.min.js"></script>
+<!-- External libraries -->
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/ScrollMagic.min.js"></script>
+<script src="js/animation.gsap.min.js"></script>
+<!-- Initialization script -->
+<script src="js/startup.js"></script>
+<script src="js/init.js"></script>
+<script>
+  const slide_menu = document.querySelectorAll(".sidenav");
+  M.Sidenav.init(slide_menu, {
+  });
+</script>
+</html>
