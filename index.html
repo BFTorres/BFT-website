@@ -171,7 +171,7 @@
           <div class="col s12 m6 l6 p-0 mt-15"
           data-sal="slide-right" 
           style="--sal-duration: 3s; 
-          --sal-delay: 2s;
+          --sal-delay: 1s;
           --sal-easing: ease-out-bounce"
           >
             <div class="card m-0">
@@ -187,7 +187,7 @@
           <div class="col s12 m6 l6 p-0 mt-15"
           data-sal="slide-left" 
           style="--sal-duration: 3s; 
-          --sal-delay: 2s;
+          --sal-delay: 1s;
           --sal-easing: ease-out-bounce"
           >
             <div class="card m-0">
@@ -239,7 +239,7 @@
           <div class="col s12 m6 l6 p-0 mt-15 "
           data-sal="slide-right" 
           style="--sal-duration: 3s; 
-          --sal-delay: 2s;
+          --sal-delay: 1s;
           --sal-easing: ease-out-bounce"
           >
             <div class="card m-0">
@@ -440,7 +440,10 @@
 </body>
 <script src="./node_modules/sal.js/dist/sal.js"></script>
 <script>
-  sal();
+  sal({
+  threshold: 1,
+  once: false,
+});
 </script>
 <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
