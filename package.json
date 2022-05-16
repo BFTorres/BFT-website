@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/BFTorres/BFT-website#readme",
   "dependencies": {
+    "jump.js": "^1.0.2",
     "sal.js": "^0.8.5"
   }
 }
