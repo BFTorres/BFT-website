@@ -439,38 +439,11 @@
   </footer>
 </body>
 <script src="./node_modules/sal.js/dist/sal.js"></script>
-
-    <script type="module">
-        import jump from './node_modules/jump.js/dist/jump.module.js';
-        
-     sal({
-        once: false,
-    });
-
-        var button = document.getElementById('button');
-
-        button.addEventListener('click', function (event) { 
-            jump('.target')
-        });
-
-        button2.addEventListener('click', function (event) { 
-            jump('.target2', {
-                duration: 2000,
-            })
-        });
-
-        button3.addEventListener('click', function (event) { 
-            jump('.target3', {
-                duration: 2000,
-                offset: 100,
-                easing: easeInOutQuad,
-                callback: () => {
-                    console.log('Completed!')
-                }
-            })
-        });
-
-
+    <script >
+   sal({
+  threshold: 1,
+  once: false,
+});
     </script>
 <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
