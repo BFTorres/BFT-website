@@ -15,7 +15,6 @@
   <link rel="stylesheet" href="css/startup-materialize.min.css">
   <link rel="stylesheet" href="animations/main.css">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="./node_modules/sal.js/dist/sal.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <link rel="icon" type="image/ico" href="favicon.ico" />
@@ -41,7 +40,7 @@
 
 <body>
   <nav>
-    <div class="container nav-wrapper fontExpanse">
+    <div class="container nav-wrapper ">
       <a href="#" data-target="slide_out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <a href="index.html"><img src="images/BFT-LOGO.png" data-target="nav-mobile"
           class="logo-img show-on-small hide-on-large-only right" alt="BFT"></a>
@@ -86,48 +85,87 @@
     <!-- class= animated fadeIn  -->
     <section id="header" class="#">
       <div class="row">
-        <div id="#" class="col s12 start-height" data-sal-duration="1900" data-sal="slide-up" data-sal-delay="1000"
-          data-sal-easing="ease-out-bounce">
+        <div id="#" class="col s12 xl6 start-height fade-in-text">
           <!-- id= animated-example classes= animated fadeIn -->
-          <h1 class="hide-on-med-and-down  fontExpanse">
-            Bernardo Fonseca Torres</h1>
-          <h2 class="show-on-medium hide-on-small-only hide-on-large-only hide-on-extra-large-only  fontExpanse">
+          <h1 class="">
             Bernardo F. Torres
-          </h2>
-          <h4 class="show-on-small hide-on-med-and-up fontExpanse">
-            Bernardo F. Torres</h4>
-          <h5 class="hide-on-med-and-down">
+          </h1>
+          <!-- <h2 class="show-on-medium hide-on-small-only hide-on-large-only hide-on-extra-large-only  fontExpanse">
+            Bernardo F. Torres
+          </h2> -->
+          <!-- <h4 class="show-on-small hide-on-med-and-up fontExpanse">
+            Bernardo F. Torres
+          </h4> -->
+          <h5 class=""">
             Digital Craftsman<br>
-            Currently Frontend Developer and UX/UI Designer at Lohoff.</h5>
-          <p class="show-on-small hide-on-large-only hide-on-extra-large-only">
+            Currently Frontend Developer and UX/UI Designer at Lohoff.
+          </h5>
+          <div class="scroll-down-arrow pb-150">
+            <!-- <a href="#projects">
+              <img class="arrow-img-small" src="images/thinarrow.png" alt="click-me">
+            </a> -->
+            <div class="block font1 mt-150 mb-150">
+              <a href="#projects" class="button superlarge nav-link mt-15">
+                Projects
+              </a>
+            </div>
+          </div>
+          <!-- <p class="show-on-small hide-on-large-only hide-on-extra-large-only">
             Digital Craftsman<br>
-            Currently Frontend Developer and UX/UI Designer at Lohoff.</p>
+            Currently Frontend Developer and UX/UI Designer at Lohoff.
+          </p> -->
+
+
           <!-- <div class="scroll-down-arrow hide-on-small-only center">
             <a href="#projects">
               <p class="font1"><b>Scroll down to see more</b></p>
               <img class="arrow-img" src="images/thinarrow.png" alt="click-me">
             </a>
-          </div> -->
-          <div class="scroll-down-arrow  center">
-            <!-- show-on-small hide-on-med-and-up -->
-            <a href="#projects">
-              <!-- <p class="font1 font-12"><b>Scroll down to see more</b></p> -->
-              <img class="arrow-img-small" src="images/thinarrow.png" alt="click-me">
-            </a>
-          </div>
+          </div> --> 
+        </div>
+        <div id="roadmap-ad" class="col s12 xl6  center ">
+          <img class="responsive-img" loading="lazy" src="images/roadmap-ad.png" alt="roadmap-ad">
         </div>
       </div>
+      
     </section>
   </header>
   <main>
+
+
+
+
+
     <section id="projects">
-      <div class="container mb-0 pt-100 ">
+      <div class="container mb-0 pt-250 ">
         <div class="row">
-          <div class="col s12 m6 l6 p-0 mt-15" data-sal-duration="1900" data-sal="slide-right" data-sal-delay="500"
-            data-sal-easing="ease-out-bounce">
+          <div class="col s12 m6 l6 p-0 mt-15">
             <div class="card m-0">
               <div class=" card-image project-img">
-                <a href="/pages/kronos.html"><img loading="lazy" src="images/KronosP.jpg" alt="project-img"></a>
+                <a href="/pages/construction.html"><img loading="lazy" src="images/ebook-card.png" alt="project-img"></a>
+              </div>
+              <div class="project-img middle">
+                <a class="project-link valign-wrapper right" href="#" target="_blank"
+                  rel="noreferrer noopener">Ebook | Education</a>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l6 p-0 mt-15">
+            <div class="card m-0">
+              <div class=" card-image project-img">
+                <a href="/pages/construction.html"><img loading="lazy" src="images/bmw-card.png" alt="project-img"></a>
+              </div>
+              <div class="project-img middle">
+                <a class="project-link valign-wrapper right" href="#" target="_blank" rel="noreferrer noopener">Frontend & UX/UI Design | FinTech</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 m6 l6 p-0 mt-15">
+            <div class="card m-0">
+              <div class=" card-image project-img">
+                <a href="/pages/kronos.html"><img loading="lazy" src="images/card-kronos.png" alt="project-img"></a>
               </div>
               <div class="project-img middle">
                 <a class="project-link valign-wrapper right" href="https://kronos-tms.herokuapp.com/" target="_blank"
@@ -135,11 +173,10 @@
               </div>
             </div>
           </div>
-          <div class="col s12 m6 l6 p-0 mt-15" data-sal-duration="1900" data-sal="slide-left" data-sal-delay="500"
-            data-sal-easing="ease-out-bounce">
+          <div class="col s12 m6 l6 p-0 mt-15">
             <div class="card m-0">
               <div class=" card-image project-img">
-                <a href="/pages/ecocube.html"><img loading="lazy" src="images/ecoC.jpg" alt="project-img"></a>
+                <a href="/pages/ecocube.html"><img loading="lazy" src="images/eco-cube-card.png" alt="project-img"></a>
               </div>
               <div class="project-img middle">
                 <a class="project-link valign-wrapper right" href="#" target="_blank" rel="noreferrer noopener">Product
@@ -149,11 +186,10 @@
           </div>
         </div>
         <div class="row">
-          <div class="col s12 m6 l6 p-0 mt-15" data-sal-duration="1900" data-sal="slide-right" data-sal-delay="500"
-            data-sal-easing="ease-out-bounce">
+          <div class="col s12 m6 l6 p-0 mt-15" >
             <div class="card m-0">
               <div class=" card-image project-img">
-                <a href="/pages/construction.html"><img loading="lazy" src="images/omniS.jpg" alt="project-img"></a>
+                <a href="/pages/construction.html"><img loading="lazy" src="images/omnisecure-card.png" alt="project-img"></a>
               </div>
               <div class="project-img middle">
                 <a class="project-link valign-wrapper right" href="#" target="_blank" rel="noreferrer noopener">Product
@@ -161,11 +197,10 @@
               </div>
             </div>
           </div>
-          <div class="col s12 m6 l6 p-0 mt-15" data-sal-duration="1900" data-sal="slide-left" data-sal-delay="500"
-            data-sal-easing="ease-out-bounce">
+          <div class="col s12 m6 l6 p-0 mt-15" >
             <div class="card m-0">
               <div class=" card-image project-img">
-                <a href="/pages/construction.html"><img loading="lazy" src="images/agogeP.jpg" alt="project-img"></a>
+                <a href="/pages/construction.html"><img loading="lazy" src="images/agoge-card.png" alt="project-img"></a>
               </div>
               <div class="project-img middle">
                 <a class="project-link valign-wrapper right" href="#" target="_blank" rel="noreferrer noopener">Software
@@ -175,11 +210,10 @@
           </div>
         </div>
         <div class="row">
-          <div class="col s12 m6 l6 p-0 mt-15 " data-sal-duration="1900" data-sal="slide-right" data-sal-delay="500"
-            data-sal-easing="ease-out-bounce">
+          <div class="col s12 m6 l6 p-0 mt-15 " >
             <div class="card m-0">
               <div class=" card-image project-img">
-                <a href="/pages/construction.html"><img loading="lazy" src="images/nwahP.jpg" alt="project-img"></a>
+                <a href="/pages/construction.html"><img loading="lazy" src="images/nwah-card.png" alt="project-img"></a>
               </div>
               <div class="project-img middle">
                 <a class="project-link valign-wrapper right" href="#" target="_blank" rel="noreferrer noopener">Software
@@ -187,8 +221,7 @@
               </div>
             </div>
           </div>
-          <div class="col s12 m6 l6 p-0 mt-15 " data-sal-duration="1900" data-sal="slide-left" data-sal-delay="500"
-            data-sal-easing="ease-out-bounce">
+          <div class="col s12 m6 l6 p-0 mt-15 " >
             <div class="card m-0">
               <div class=" card-image project-img">
                 <a href="/pages/construction.html"><img loading="lazy" src="images/ironP.jpg" alt="project-img"></a>
@@ -201,8 +234,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col s12 m6 l6 p-0 mt-15 " data-sal-duration="1900" data-sal="slide-right" data-sal-delay="500"
-            data-sal-easing="ease-out-bounce">
+          <div class="col s12 m6 l6 p-0 mt-15 " >
             <div class="card m-0">
               <div class=" card-image project-img">
                 <a href="/pages/construction.html"><img loading="lazy" src="images/nftCat.jpg" alt="project-img"></a>
@@ -229,9 +261,8 @@
         </div>
       </div>
     </section>
-    <section id="corps" class="page-footer mt-100">
-      <div class="container" data-sal-duration="1900" data-sal="slide-up" data-sal-delay="500"
-        data-sal-easing="ease-out-bounce">
+    <section id="corps" class="mt-100">
+      <div class="container" >
 
         <h5>
           <!-- LET'S WORK TOGETHER<br> -->
@@ -345,9 +376,8 @@
         <i class="up-btn arrow-img"><img src="images/bi_arrow-up-circleuparrow.png" style=" width: 50%; ;">mode_edit</i>
       </a>
     </div> -->
-    <section id="contact" class="page-footer mt-100">
-      <div class="container" data-sal-duration="1900" data-sal="slide-up" data-sal-delay="500"
-        data-sal-easing="ease-out-bounce">
+    <section id="contact" class="page-contact mt-100">
+      <div class="container" >
         <div class="row">
           <div class="col s12 mtb-30">
             <h5 class="mtb-30 mb-30">
@@ -366,43 +396,67 @@
       </div>
     </section>
   </main>
-  <footer id="footer" class="page-footer mt-100">
+  <footer id="footer" class="page-footer mt-250">
     <!-- class="center"-->
     <div class="footer-copyright font2 center">
       <div class="container font1">
         <div class="row">
-          <p class="left s12">
+          <!-- <p class="left s6">
             All content are exclusively for private usage and non-commercial purposes
-          </p>
+          </p> -->
+          <div class="col s12 m6 logo-footer">
+            <a href="index.html"><img src="images/BFT-LOGO-black.png" class="img-footer" alt="BFT"></a>
+          </div>
+          <div class="col s12 m6 arrow-up">
+            <a href="#home" class="">
+              <img src="images/up.svg">
+            </a>
+          </div>
         </div>
         <!-- <div class="divider"></div> -->
         <div class="mb-50 footer-link">
-          <div class="left hide-on-small-only">©
+          <div class="left hide-on-small-only">
+            ©
             <script>
               document.write(new Date().getFullYear());
             </script>
             Bernardo Fonseca Torres
           </div>
-          <a href="/pages/legal.html" class="right hide-on-small-only">Impressum</a>
+          <a href="/pages/legal.html" class="right hide-on-small-only crimson">Impressum</a>
           <p class="center show-on-small hide-on-med-and-up">©
             <script>
               document.write(new Date().getFullYear());
             </script>
             Bernardo Fonseca Torres
           </p>
-          <p><a href="/pages/legal.html" class="center show-on-small hide-on-med-and-up">Impressum</a></p>
+          <p><a href="/pages/legal.html" class="center show-on-small hide-on-med-and-up crimson">Impressum</a></p>
         </div>
       </div>
   </footer>
 </body>
-<script src="./node_modules/sal.js/dist/sal.js"></script>
-<script>
-   sal({
-    threshold: 1,
-    once: false,
-    });
-</script>
 <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Flip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Observer.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
+<script>
+  /* gsap.registerPlugin(ScrollTrigger);
+  
+  gsap.to(".card", {
+    scrollTrigger: {
+      trigger: ".card",
+      toggleActions: "restart none none none"
+    },
+    
+    duration: 1, 
+      opacity: 1, 
+      y: -100, 
+      stagger: 0.2,
+      ease: "back.in"
+  }) */
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="js/materialize.js"></script>
