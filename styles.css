@@ -750,10 +750,10 @@ span.subheading {
 #projects {
     /* height: 100vh; */
     background-color: #000000;
-    margin-top: 150px;
+    /* margin-top: 150px; */
     /* margin-bottom: 100px; */
     /* padding-top: 150px; */
-    /* padding-bottom: 150px; */
+    padding-bottom: 150px;
 }
 
 
@@ -809,9 +809,13 @@ span.subheading {
     background-color: #000000;
 }
 
+
 #corps {
-    padding-top: 100px;
-}
+        padding-top: 100px;
+        background-color: #ffffff;
+        color: #000000;
+        padding-bottom: 100px;
+    }
 
 .corps-img {
     opacity: 1;
