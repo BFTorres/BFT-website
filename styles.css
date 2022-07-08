@@ -192,11 +192,15 @@ img.show-on-small.hide-on-large-only.right {
 }
 #roadmap-ad {
     margin-top: 250px;
+    text-align: right;
 }
 #roadmap-ad .responsive-img {
-    width: 50%;
+    width: 286px;
 }
 @media only screen and (max-width: 667px) {
+    #roadmap-ad {
+        text-align: center;
+    }
     #roadmap-ad .responsive-img {
     width: 70%;
 }
@@ -206,6 +210,7 @@ img.show-on-small.hide-on-large-only.right {
         /* margin-top: 150px; */
         margin-top: 0px;
         /* margin-bottom: 250px;*/
+        text-align: center;
     } 
 }
 
