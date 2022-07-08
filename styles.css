@@ -179,7 +179,7 @@ img.show-on-small.hide-on-large-only.right {
     width: 60px;
 }
 #roadmap-ad {
-    margin-top: 250px;
+   /*  margin-top: 250px; */
 }
 #roadmap-ad .responsive-img {
     width: 50%;
@@ -191,7 +191,7 @@ img.show-on-small.hide-on-large-only.right {
 }
 @media only screen and (max-width: 1200px) {
     #roadmap-ad {
-        margin-top: 150px;
+        /* margin-top: 150px; */
         margin-bottom: 250px;
     }
 }
