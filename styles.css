@@ -1136,7 +1136,7 @@ span.subheading {
 }
 
 .fade-in-text {
-    animation: fadeIn 5s;
+    animation: fadeIn 2s;
   }
 
   @keyframes fadeIn {
