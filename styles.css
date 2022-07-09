@@ -196,13 +196,26 @@ img.show-on-small.hide-on-large-only.right {
 #roadmap-ad .responsive-img {
     width: 286px;
 }
+#project-header-img {
+    margin-top: 250px;
+    text-align: right;
+}
+#project-header-img .responsive-img {
+    width: 400px;
+}
 @media only screen and (max-width: 667px) {
     #roadmap-ad {
         text-align: center;
     }
     #roadmap-ad .responsive-img {
     width: 70%;
-}
+    }
+    #project-header-img {
+        text-align: center;
+    }
+    #project-header-img .responsive-img {
+        width: 70%;
+    }
 }
 @media only screen and (max-width: 1200px) {
     #roadmap-ad {
@@ -210,8 +223,20 @@ img.show-on-small.hide-on-large-only.right {
         margin-top: 0px;
         /* margin-bottom: 250px;*/
         text-align: center;
+    }
+    #project-header-img {
+        /* margin-top: 150px; */
+        margin-top: 0px;
+        /* margin-bottom: 250px;*/
+        text-align: center;
     } 
 }
+#projectStart .responsive-img,
+#projectPresi .responsive-img
+ {
+    max-width: 60%;
+}
+
 
 .footer-link {
     margin-top: 30px;
@@ -352,7 +377,12 @@ a:hover {
     width:30px;
     height: 30px;
 }
-
+.font-black {
+    color: #000000 !important;
+}
+.font-white {
+    color: #ffffff !important;
+}
 .m-0 {
     margin: 0px !important
 }
@@ -1058,7 +1088,7 @@ span.subheading {
 }
 
   
-    .button {
+.button {
         /* display: inline-block;
     text-decoration: none;
     position: relative;
@@ -1066,6 +1096,7 @@ span.subheading {
         height: 60px;
         padding: 22px 26px;
         background-color: #206483;
+        border: 2px solid #206483;
         -webkit-transition: background-color 200ms ease;
         transition: background-color 200ms ease;
         font-family: Sohne, sans-serif;
@@ -1074,13 +1105,35 @@ span.subheading {
         line-height: 19px;
         text-decoration: none;
     }
-    .button:hover {
-        background-color:#f00658;
+.button:hover {
+        background-color:#f00659;
+        border: 2px solid #F00659;
         color: #fafafa;
     }
-    .button.superlarge {
+.button.superlarge {
         padding: 20px 49px;
     }
+
+.button-sec {
+    height: 60px;
+        padding: 22px 26px;
+        background-color: transparent;
+        border: 2px solid #F00659;
+        -webkit-transition: background-color 200ms ease;
+        transition: background-color 200ms ease;
+        font-family: Sohne, sans-serif;
+        color: #fafafa;
+        font-size: 16px;
+        line-height: 19px;
+        text-decoration: none;
+}
+.button-sec:hover {
+    background-color:#ffffff;
+    color: #f00658;
+}
+.button-sec.superlarge {
+    padding: 20px 49px;
+}
 
 .fade-in-text {
     animation: fadeIn 5s;
@@ -1090,3 +1143,16 @@ span.subheading {
     0% { opacity: 0; }
     100% { opacity: 1; }
   }
+
+#projectStart {
+    color: #000000;
+    background-color: #ffffff;
+    padding: 150px 0 150px 0;
+}
+#projectStart p.font-1 {
+    color: #000000 !important;
+}
+
+#projectPresi {
+    padding: 150px 0 150px 0;
+}
