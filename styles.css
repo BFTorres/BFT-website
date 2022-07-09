@@ -859,7 +859,7 @@ span.subheading {
     /* text-decoration: underline; */
     transition: all .3s ease;
     font-weight: bolder;
-    color: #8CC8E3 !important;
+    color: #206483 !important;
 }
 
 .kronosHeader-link:hover {
@@ -1089,11 +1089,7 @@ span.subheading {
 
   
 .button {
-        /* display: inline-block;
-    text-decoration: none;
-    position: relative;
-    margin-top: 40px; */
-        height: 60px;
+        /* height: 60px;
         padding: 22px 26px;
         background-color: #206483;
         border: 2px solid #206483;
@@ -1103,19 +1099,43 @@ span.subheading {
         color: #fafafa;
         font-size: 16px;
         line-height: 19px;
+        text-decoration: none; */
+        background: transparent;
+        line-height: 1.5;
+        --line-height: 1.5rem;
+        padding: 0.75rem 1rem;
+        border: solid 0.0625rem #f00659;
+        color: #f00659;
+        border-radius: 0.25rem;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: minmax(0,-webkit-max-content);
+        grid-auto-columns: minmax(0,max-content);
+        display: inline-grid;
+        align-items: center;
+        justify-content: center;
+        grid-gap: 0.5rem;
+        gap: 0.5rem;
+        cursor: pointer;
         text-decoration: none;
+        flex-shrink: 0;
+        transition: all .14s ease-out;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
 .button:hover {
-        background-color:#f00659;
-        border: 2px solid #F00659;
+        background-color:transparent;
         color: #fafafa;
+        transform: translate(-0.25rem,-0.25rem);
+        box-shadow: 0.25rem 0.25rem #f00659;
     }
 .button.superlarge {
-        padding: 20px 49px;
+        padding: 10px 49px;
     }
 
 .button-sec {
-    height: 60px;
+        /* height: 60px;
         padding: 22px 26px;
         background-color: transparent;
         border: 2px solid #F00659;
@@ -1125,14 +1145,39 @@ span.subheading {
         color: #fafafa;
         font-size: 16px;
         line-height: 19px;
+        text-decoration: none; */
+        background: #206483;
+        line-height: 1.5;
+        --line-height: 1.5rem;
+        padding: 0.75rem 1rem;
+        border: solid 0.0625rem #ffffff;
+        color: #ffffff;
+        border-radius: 0.25rem;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: minmax(0,-webkit-max-content);
+        grid-auto-columns: minmax(0,max-content);
+        display: inline-grid;
+        align-items: center;
+        justify-content: center;
+        grid-gap: 0.5rem;
+        gap: 0.5rem;
+        cursor: pointer;
         text-decoration: none;
+        flex-shrink: 0;
+        transition: all .14s ease-out;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
 }
 .button-sec:hover {
-    background-color:#ffffff;
-    color: #f00658;
+    background-color:#206483;
+        color: #fafafa;
+        transform: translate(-0.25rem,-0.25rem);
+        box-shadow: 0.25rem 0.25rem #ffffff;
 }
 .button-sec.superlarge {
-    padding: 20px 49px;
+    padding: 10px 49px;
 }
 
 
