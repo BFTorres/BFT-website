@@ -1362,3 +1362,10 @@ span.subheading {
         margin: 20px 20px 20px 20px;
     }
 }
+.breadcrumb {
+    font-size: 16px !important;
+}
+.breadcrumb:before {
+    color: #ffffff;
+    vertical-align: middle;
+}
