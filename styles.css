@@ -1218,6 +1218,37 @@ span.subheading {
     transform: translate(-0.25rem,-0.25rem);
     box-shadow: 0.25rem 0.25rem #000000;
 }
+.button-qua {
+    background: transparent;
+        line-height: 1.5;
+        --line-height: 1.5rem;
+        padding: 0.75rem 1rem;
+        /* border: solid 0.0625rem #ffffff; */
+        color: #ffffff;
+        border-radius: 0.25rem;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: minmax(0,-webkit-max-content);
+        grid-auto-columns: minmax(0,max-content);
+        display: inline-grid;
+        align-items: center;
+        justify-content: center;
+        grid-gap: 0.5rem;
+        gap: 0.5rem;
+        cursor: pointer;
+        text-decoration: none;
+        flex-shrink: 0;
+        transition: all .14s ease-out;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+}
+.button-qua:hover {
+    background-color:transparent;
+    color: #ffffff;
+    transform: translate(-0.25rem,-0.25rem);
+    box-shadow: 0.25rem 0.25rem #ffffff;
+}
 
 
 
@@ -1291,11 +1322,43 @@ span.subheading {
     box-shadow: 0.25rem 0.25rem #ffffff;
 }
 
+.card-text-left-black {
+    border: solid 0.0625rem #000000;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    font-size: 1.25rem;
+    margin: 20px 20px 20px 0;
+    flex-shrink: 0;
+    transition: all .14s ease-out;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card-text-right-black {
+    border: solid 0.0625rem #000000;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    font-size: 1.25rem;
+    margin: 20px 0 20px 20px;
+    flex-shrink: 0;
+    transition: all .14s ease-out;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-text-left-black:hover,
+.card-text-right-black:hover {
+    background-color: transparent;
+    transform: translate(-0.25rem,-0.25rem);
+    box-shadow: 0.25rem 0.25rem #000000;
+}
+
 @media only screen and (max-width: 993px) {
-    .card-text-left {
+    .card-text-left,
+    .card-text-left-black {
         margin: 20px 20px 20px 20px;
     }
-    .card-text-right {
+    .card-text-right,
+    .card-text-right-black {
         margin: 20px 20px 20px 20px;
     }
 }
