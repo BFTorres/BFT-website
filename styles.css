@@ -577,6 +577,9 @@ nav,
     #header h5 {
         font-size: 20px;
     }
+    #header .scroll-down-arrow .mt-150 {
+        margin-top: 50px;
+    }
 }
 
 /*sidenav styling*/
