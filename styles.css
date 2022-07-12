@@ -733,13 +733,10 @@ span.subheading {
 }
 
 .about-img {
-    /* width: 150px;
-    height: 150px !important; */
-
     opacity: 1;
     transition: .5s ease;
-    backface-visibility: hidden;
-    width: 350px;
+    backface-visibility: hidden;/* 
+    width: 350px; */
     height: auto;
 }
 
@@ -1323,7 +1320,21 @@ span.subheading {
 #projectPresi {
     padding: 150px 0 150px 0;
 }
+.card-text-center {
+    border-radius: 10px;
+    font-size: 1.25rem;
+    margin: 20px 20px 20px 0;
+    flex-shrink: 0;
+    transition: all .14s ease-out;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
+.card-text-center:hover {
+    background-color: transparent;
+    transform: translate(-0.25rem,-0.25rem);
+    box-shadow: 0.25rem 0.25rem #F00659;
+}
 
 .card-text-left {
     border: solid 0.0625rem #ffffff;
@@ -1336,6 +1347,7 @@ span.subheading {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
 .card-text-right {
     border: solid 0.0625rem #ffffff;
     padding: 1rem;
