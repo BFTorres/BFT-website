@@ -740,6 +740,11 @@ span.subheading {
     height: auto;
 }
 
+#error-404 .about-img {
+    /* width: 300px !important; */
+    height: 300px !important;
+}
+
 .about-img-medium {
     /* width: 150px;
     height: 150px !important; */
